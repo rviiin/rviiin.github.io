@@ -173,11 +173,11 @@ section {
     background: white;
 }
 .profile-img {
-    width: 150px;         /* adjust size */
+    width: 150px;         
     height: 150px;
-    border-radius: 50%;   /* makes it circular */
-    object-fit: cover;    /* ensures the image fills nicely */
-    border: 3px solid #333; /* optional border */
+    border-radius: 50%;   
+    object-fit: cover;   
+    border: 3px solid #333;
 }
 
 .about-content {
@@ -325,24 +325,39 @@ section {
 .contact {
     background: #012238;
     color: white;
-    padding: 3rem 0;   /* smaller height vs default 5rem */
+    padding: 3rem 0;  
 }
 
 .contact-content p {
-    font-size: 1rem;   /* slightly smaller text */
-    margin-bottom: 1.2rem;  /* less spacing below */
+    font-size: 1rem;   
+    margin-bottom: 1.2rem;  
 }
 
 .contact-links {
-    gap: 1.2rem;       /* tighter spacing between buttons */
-    margin-top: 1.2rem; /* smaller top margin */
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;        
+    margin-top: 1.5rem;
 }
 
 .contact-link {
-    padding: 10px 18px;   /* smaller buttons */
-    font-size: 0.95rem;   /* slightly smaller font */
+    display: inline-flex;         
+    align-items: center;           
+    gap: 8px;                      
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;           
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(8px);
+    font-weight: 500;
 }
 
+.contact-link:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-3px);
+}
 
 /* Animations */
 @keyframes fadeInUp {
@@ -386,4 +401,5 @@ section {
         align-items: center;
     }
 }
+
 
